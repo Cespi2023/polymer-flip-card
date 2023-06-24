@@ -1,0 +1,42 @@
+{
+  "name": "@adaws/flip-card",
+  "description": "A card component based on the code-it notes by Dan Harding &lt;https://dev.to/danielharding&gt;",
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "card"
+  ],
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawsonalex/flip-card"
+  },
+  "scripts": {
+    "bundle": "rollup --config rollup.config.js",
+    "build:demo": "cp bundle/flip-card.js demo && cp ./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js demo;git subtree push --prefix demo origin gh-pages"
+  },
+  "license": "MIT",
+  "author": "Alex Dawson",
+  "main": "flip-card.js",
+  "module": "flip-card.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.3.0",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^5.2.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-terser": "^4.0.4",
+    "wct-mocha": "^1.0.1"
+  }
+}
